@@ -1,0 +1,35 @@
+This Python 3 environment comes with many helpful analytics libraries installed
+이 파이썬3 환경은 많은 도움되는 통계 라이브러리들이 설치되어 제공됩니다(comes)
+It is defined by the kaggle/python Docker image: http://github.com/kaggle/docker-python
+이것은 캐클/파이썬 도커 이미지에 의해 정의됩니다
+For example, here's several helpful packages to load
+예를들어, 여기 몇 가지 도움되는 패키지가 있습니다 로드할 수 있는.
+
+linear algebra(리니얼 알지브라)
+선형 대수학
+data processing, CSV file I/O
+데이터 처리, csv 파일 입출력
+
+Input data files are available in the read-only "../input/" directory
+입력 데이터 파일들은 읽기 전용으로 가능합니다. ../input/ 폴더에서
+For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
+예를들어, 이것을 실행시키면(run을 클릭하거나 shift+enter를 눌러서) 모든 파일을 리스트 할 것이다 입력 폴더 아래의
+
+You can write up to 20GB to the current directory(/kaggle/working/) that gets preserved as output when you create a version using 'Save & Run All'
+너는 20GB를 쓸 수 있다 현재 폴더에(/kaggle/working/) 보존된다 출력으로써 너가 Save&Run All을 사용해서 버전을 생성할때
+You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
+너는 또한 쓸수있다 임시 파일을 kaggle/temp에. 그러나 그것들은 현제 세션 밖에서 저장되지 않을 것이다.
+This notebook is a very basic and simple introductory primer to the method of ensembling (combining) base learning models
+이 노트북은 매우 기본직이고 간단한 입문서입니다 기본 학습 모델들을 앙상블(결합)하는 방법에대한
+in particular the variant of ensembling known as Stacking
+특히 앙상블의 변형으로 알려진 Stacking에 대해
+In a nutshell stacking uses as a first-level(base), the predictions of a few basic classifiers
+간단히말해서 Stacking은 첫번째 레벨(기반)으로써 사용한다 몇가지 기본적인 분류 예측을
+and then uses another model at the second-level to predict the output from the earlier first-level predictions
+, 그리고 다른 모델 두번째 레벨에서 사용해서 출력을 예측합니다. 이전에 첫번째 레벨의 예측으로부터
+
+The Titanic dataset is a prime candidate for introducing this concept as many newcomers to Kaggle start out here.
+타이타닉 데이터셋은 주요 후보이다 개념을 소개하기 위한/ 캐글을 처음 접하는 많은 사람들이 여기서 시작하기 위해
+Furthermore even though stacking has been responsible for many a team winning Kaggle competitions there seems to be a dearth of kernels on this topic so I hope this notebook can fill somewhat of that void.
+게다가 Stacking은 많은 팀이 Kaggle competitions에서 이기기위한 책임이 있지만 , /커널이 부족해보인다 이 토픽에대해,/ 그래서 나는 이 노트북이 빈공간에대해 어느정도 채울수 있기를 희망한다.
+
